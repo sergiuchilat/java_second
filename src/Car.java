@@ -1,15 +1,35 @@
 public class Car {
-    public Car(String name, Integer maxSpeed){
+    public Car(String name, Integer maxSpeed, Float fuelConsumption){
         this.name = name;
         this.maxSpeed = maxSpeed;
+        this.fuelConsumption = fuelConsumption;
     }
-    private String name;
-    private Integer speed;
+    private final String name;
+    private int speed;
     private final Integer maxSpeed;
+    private Float fuelConsumption = 0.0F;
+    private Double price = 0.0;
+    private byte seats = 5;
+
+    public void setPrice(Double price){
+        this.price = price;
+    }
+
+    public Double getPrice() {
+        return this.price;
+    }
+    public void setSeats(Byte seats) {
+        this.seats = seats;
+    }
+
+    public Byte getSeats(){
+        return this.seats;
+    }
 
     public void startEngine(Integer initialSpeed){
         this.speed = initialSpeed;
         System.out.println("[" + this.name + "] Engine started");
+        System.out.println("[" + this.name + "] consuming " + this.fuelConsumption +" liters/100km");
     }
 
     public void speedUp(Integer delta) {
