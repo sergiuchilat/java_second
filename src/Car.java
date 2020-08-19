@@ -7,15 +7,15 @@ public class Car {
     private final String name;
     private int speed;
     private final Integer maxSpeed;
-    private Float fuelConsumption = 0.0F;
-    private Double price = 0.0;
+    private float fuelConsumption = 0.0F;
+    private double price = 0.0;
     private byte seats = 5;
 
     public void setPrice(Double price){
         this.price = price;
     }
 
-    public Double getPrice() {
+    public double getPrice() {
         return this.price;
     }
     public void setSeats(Byte seats) {

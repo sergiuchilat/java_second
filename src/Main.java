@@ -1,5 +1,23 @@
 public class Main {
     public static void main(String[] args) {
+        int lesson = 8;
+        switch (lesson) {
+            case 5:
+                Main.lesson5();
+                break;
+            case 8:
+                Main.lesson8();
+                break;
+            default:
+                Main.defaultAction();
+
+        }
+    }
+
+    public static void defaultAction() {
+    }
+
+    public static void lesson5() {
         Car toyotaCar = new Car("Toyota", 240, 6.7F);
         toyotaCar.setPrice(9999.9999);
         toyotaCar.setSeats((byte) 7);
@@ -25,7 +43,12 @@ public class Main {
         bmwCar.stopEngine();
         System.out.println("[" + bmwCar.getName() + "] Current speed is " + toyotaCar.getSpeed());
 
-        System.out.print("Price difference between [" + toyotaCar.getName() + "] and " + bmwCar.getName() + "] is "  );
+        System.out.print("Price difference between [" + toyotaCar.getName() + "] and " + bmwCar.getName() + "] is ");
         System.out.println(bmwCar.getPrice() - toyotaCar.getPrice());
+    }
+
+    public static void lesson8() {
+        Lesson8 conditional = new Lesson8();
+        conditional.testAndStatement();
     }
 }
