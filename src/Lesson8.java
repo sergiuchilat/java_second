@@ -121,5 +121,23 @@ public class Lesson8 {
         do {
             System.out.println( i++);
         }while ( i <= 10);
+
+        int k = 1;
+        byte delta = 1;
+        while (k > 0 && k < 100) {
+            if(k >= 99) {
+                delta = -1;
+            } else if(k <= 1) {
+                delta = 1;
+            }
+            k += delta;
+            System.out.println(k);
+        }
+
+        {
+            int localVariable = 1;
+            System.out.println(localVariable);
+        }
+        // System.out.println(localVariable);
     }
 }
