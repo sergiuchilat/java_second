@@ -7,6 +7,10 @@ public class Lesson9 {
         Rabbit rabbit = new Rabbit("Bugs Bunny");
         Lion lion = new Lion("Lion King", 25);
 
+        if(rabbit.getAge() == 0) {
+            rabbit.setAge(2);
+        }
+
         System.out.println("Lion name is: " + lion.getName());
         System.out.println("Lion age is: " + lion.getAge());
         System.out.println("Lion eat: " + lion.whatEat());
