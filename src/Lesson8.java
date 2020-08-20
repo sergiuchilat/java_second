@@ -139,5 +139,49 @@ public class Lesson8 {
             System.out.println(localVariable);
         }
         // System.out.println(localVariable);
+
+        /* ----- Hard code here ----*/
+        System.out.println("Start");
+        int rows = 3;
+        int cols = 3;
+        System.out.println("Label break");
+        breakLabel:
+        for (i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 10; j++) {
+                System.out.printf("%10s", "(" + i + ", " + j + ")");
+                break breakLabel;
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        System.out.println("Label continue");
+        continueLabel:
+        for (i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 10; j++) {
+                System.out.printf("%10s", "(" + i + ", " + j + ")");
+                continue continueLabel;
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        boolean t = true;
+        first:
+        {
+            second:
+            {
+                third:
+                {
+                    System.out.println("Before the break");
+                    if (t) // break out of second block
+                        break second;
+                    System.out.println("After third");
+                }
+                System.out.println("This won't execute");
+            }
+            System.out.println("This is after the second block");
+        }
     }
 }

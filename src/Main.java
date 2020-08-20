@@ -1,12 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        int lesson = 8;
+        int lesson = 9;
         switch (lesson) {
             case 5:
                 Main.lesson5();
                 break;
             case 8:
                 Main.lesson8();
+                break;
+            case 9:
+                Main.lesson9();
                 break;
             default:
                 Main.defaultAction();
@@ -50,5 +53,10 @@ public class Main {
     public static void lesson8() {
         Lesson8 conditional = new Lesson8();
         conditional.testAndStatement();
+    }
+
+    public static void lesson9() {
+        Lesson9 lesson = new Lesson9();
+        lesson.run();
     }
 }
