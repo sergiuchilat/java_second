@@ -1,6 +1,6 @@
 package Lesson9;
 
-abstract public class Animal {
+abstract class Animal {
     private final String name;
     private boolean hungry = false;
     protected String eatWhat = "everything";

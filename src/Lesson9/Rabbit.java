@@ -10,4 +10,8 @@ public class Rabbit extends Animal{
     public void setAge(int age){
         this.age = age;
     }
+
+    protected void testProtected(){
+        System.out.println("test protected");
+    }
 }
