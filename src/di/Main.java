@@ -9,10 +9,18 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.print("x = ");
-        float x = in.nextFloat();
-        System.out.print("y = ");
-        float y = in.nextFloat();
+        float x = 0;
+        float y = 0;
+        try{
+            System.out.print("x = ");
+            x = in.nextFloat();
+            System.out.print("y = ");
+            y = in.nextFloat();
+        } catch (Exception e){
+            System.out.println(e.toString());
+            return;
+        }
+
 
         Calculator calculator = new Calculator();
         Math math = new Math();
