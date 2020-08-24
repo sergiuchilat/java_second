@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        float x = 0;
-        float y = 0;
+        float x;
+        float y;
         try{
             System.out.print("x = ");
             x = in.nextFloat();
