@@ -3,7 +3,7 @@ package di.model;
 public class Calculator {
     private boolean on = false;
     public void display(Float result) throws Exception{
-        if(!this.on){
+        if(!on){
             throw new Exception("Calculator is OFF");
         }
         System.out.println(result);

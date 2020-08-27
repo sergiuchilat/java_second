@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        var in = new Scanner(System.in);
 
         float x;
         float y;
@@ -21,9 +21,10 @@ public class Main {
             return;
         }
 
-
         Calculator calculator = new Calculator();
         Math math = new Math();
+
+        System.out.println(calculator.toString());
 
         System.out.println(">>> START calculation");
 

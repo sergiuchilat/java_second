@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int lesson = 9;
+        int lesson = 5;
         switch (lesson) {
             case 5:
                 Main.lesson5();
