@@ -14,6 +14,15 @@ public class Main {
         System.out.println(ot.drawFigure(new Point(2, 3), new Point(), new Point(0, 8)));
 
 
+        ChainedCall number = new ChainedCall(60);
+
+        number
+                .div_2()
+                .div_3()
+                .div_10()
+                .end();
+        ;
+
 
     }
 }
