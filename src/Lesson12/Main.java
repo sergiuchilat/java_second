@@ -17,12 +17,13 @@ public class Main {
         ChainedCall number = new ChainedCall(60);
 
         number
-                .div_2()
-                .div_3()
-                .div_10()
-                .end();
-        ;
+            .div_2()
+            .div_3()
+            .div_10()
+            .end();
 
+        ChainedBuilder homeBuilder = new ChainedBuilder();
 
+        homeBuilder.build("Foundation").build("walls").build("roof");
     }
 }
