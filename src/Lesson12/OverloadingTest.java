@@ -1,6 +1,6 @@
 package Lesson12;
 
-class Point {
+final class Point {
     public int x;
     public int y;
 
