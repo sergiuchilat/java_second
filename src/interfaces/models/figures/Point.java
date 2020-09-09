@@ -1,6 +1,8 @@
 package interfaces.models.figures;
 
-public class Point extends Figure implements IFigure, IPoint{
+import java.io.Serializable;
+
+public class Point extends Figure implements IFigure, IPoint, Serializable {
     private final int x;
     private final int y;
     public Point(String name, int x, int y){

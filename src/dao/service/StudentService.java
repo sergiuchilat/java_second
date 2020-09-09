@@ -4,11 +4,8 @@ import dao.dao.StudentDAO;
 import dao.model.Student;
 
 public class StudentService implements IService<Student> {
-    private final StudentDAO studentDAO;
+    private final StudentDAO studentDAO = new StudentDAO();
 
-    public StudentService() {
-        this.studentDAO = new StudentDAO();
-    }
     @Override
     public Student create(Student student) {
         return this.studentDAO.create(student);
