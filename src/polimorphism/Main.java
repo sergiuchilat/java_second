@@ -12,6 +12,7 @@ public class Main {
 
         for (Transport transport: transports) {
             if(transport != null){
+                System.out.println(transport.name);
                 transport.run();
             }
         }
