@@ -16,5 +16,12 @@ public class Main {
                 transport.run();
             }
         }
+
+        /*Transport car = new Car();
+        Transport train = new Train();
+        car.run();
+        System.out.println(car.name);
+        System.out.println(car.getName());
+        System.out.println(train.name);*/
     }
 }
