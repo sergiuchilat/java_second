@@ -24,6 +24,9 @@ public class Main {
 
         ChainedBuilder homeBuilder = new ChainedBuilder();
 
-        homeBuilder.build("Foundation").build("walls").build("roof");
+        homeBuilder
+                .build("Foundation")
+                .build("walls")
+                .build("roof");
     }
 }
