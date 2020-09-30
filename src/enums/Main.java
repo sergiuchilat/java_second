@@ -1,20 +1,22 @@
 package enums;
 
 public class Main {
-    public enum Level {
-        LOW,
-        MEDIUM,
-        HIGH
-    }
 
     public enum Colors {
         RED ("#FF0000", "Red"),
         GREEN ("#00FF00"),
-        BLUE ("#0000FF");
-        private final String hexCode;
-        private String name = "";
+        BLUE ("#0000FF"),
+        BLACK;
+        private String hexCode;
+        private String name;
+
+        Colors(){
+            this.hexCode = "";
+            this.name = "";
+        }
 
         Colors(String hexCode) {
+            this();
             this.hexCode = hexCode;
         }
 
@@ -33,8 +35,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Level level = Level.LOW;
-        System.out.println(level);
         System.out.println(Colors.RED + ":" + Colors.getHexCode(Colors.RED) + ":" + Colors.getName(Colors.RED));
         System.out.println(Colors.GREEN + ":" + Colors.getHexCode(Colors.GREEN) + ":" + Colors.getName(Colors.GREEN));
         System.out.println(Colors.BLUE + ":" + Colors.getHexCode(Colors.BLUE) + ":" + Colors.getName(Colors.BLUE));
