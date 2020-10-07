@@ -3,24 +3,19 @@ package java8;
 import java.util.*;
 
 public class FunctionalInterface {
+    static FibonacciInterface fibonacci = (f1, f2, instance) -> {
+        if(f2 > 1000000) {
+            return instance;
+        }
+        instance.get(f2, f1 + f2, instance);
+        System.out.println(f1);
+        return instance;
+    };
+
     public static void main(String[] args) {
 
-//        FibonacciInterface fibonacciInterface = (f1, f2, instance) -> {
-//            if(f2 > 1000) {
-//                return instance;
-//            }
-//            instance.run(f2, f1 + f2, instance);
-//            System.out.println(f1);
-//            return instance;
-//        };
-//
-//        fibonacciInterface.run(0, 1, fibonacciInterface);
 
-
-
-
-
-
+        fibonacci.get(0, 1, fibonacci);
 
 //        PrintInterface printInterface1 = (message) ->System.out.println("[" + message + "]");
 //
