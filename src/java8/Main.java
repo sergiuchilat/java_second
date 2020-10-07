@@ -52,6 +52,12 @@ public class Main {
                         .map(PersonModel::getSalary)
                         .reduce(0.0F, Float::sum)
         );
+
+//        System.out.println(
+//                persons
+//                .stream()
+//                .reduce()
+//        );
         //persons.stream().iterator()
     }
 }
