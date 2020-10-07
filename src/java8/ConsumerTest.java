@@ -19,7 +19,7 @@ public class ConsumerTest {
 
     public static void multiply(Integer multiplier, List<Integer> list){
         for (int i = 0; i < list.size(); i++){
-            list.set(i, list.get(i) * 3);
+            list.set(i, list.get(i) * multiplier);
         }
     }
 
