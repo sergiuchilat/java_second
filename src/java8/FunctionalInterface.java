@@ -13,18 +13,7 @@ public class FunctionalInterface {
     };
 
     public static void main(String[] args) {
-
-
         fibonacci.get(0, 1, fibonacci);
-
-//        PrintInterface printInterface1 = (message) ->System.out.println("[" + message + "]");
-//
-//        PrintInterface printInterface2 = (message) ->System.out.println("(" + message + ")");
-//
-//        printInterface1.print("hello");
-//        printInterface2.print("hello");
-
-
         List<Integer> numbers = new ArrayList<>();
         for(int i = 0; i < 10; i++) {
             numbers.add(i);

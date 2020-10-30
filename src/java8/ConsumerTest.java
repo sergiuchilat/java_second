@@ -37,7 +37,7 @@ public class ConsumerTest {
                 .andThen(reverseList)
                 .andThen(multiply4)
                 .andThen(displayList)
-                .accept(numberGenerator.get());
+                .accept(numberReader.get());
     }
 
     public static void multiply(Integer multiplier, List<Integer> list){
